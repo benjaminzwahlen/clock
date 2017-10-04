@@ -15,7 +15,7 @@ public class TimeClockState implements AbstractClockState {
 	
 	@Override
 	public long getSleepTime() {
-		return 100l;
+		return 100L;
 	}
 
 	@Override
@@ -39,12 +39,6 @@ public class TimeClockState implements AbstractClockState {
 		clockface.setDigit(4, new Digit(minuteString.substring(1, 2)));
 		
 		return clockface;
-	}
-
-	@Override
-	public boolean acceptKey(String key, int repeatCount) {
-		//The zwahlen face doesn't care if a button is pressed.
-		return false;
 	}
 
 }

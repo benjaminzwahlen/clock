@@ -5,3 +5,5 @@ compile/
 /bin/
 .idea/
 out/
+*.iml
+lib/

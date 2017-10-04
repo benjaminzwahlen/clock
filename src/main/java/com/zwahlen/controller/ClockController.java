@@ -2,13 +2,9 @@ package com.zwahlen.controller;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-import org.apache.commons.lang3.StringUtils;
-
 import com.zwahlen.clockface.AbstractClockFaceRenderer;
 import com.zwahlen.clockface.ClockFace;
 import com.zwahlen.states.AbstractClockState;
-import com.zwahlen.states.DemoClockState;
-import com.zwahlen.states.ShutdownClockState;
 import com.zwahlen.states.TimeClockState;
 
 public class ClockController {
@@ -37,12 +33,11 @@ public class ClockController {
 
 	public void start()
 	{
-		boolean stop = false;
 		
 		setState(new TimeClockState());
-		long sleepTime = 1000l;
+		long sleepTime = 1000L;
 
-		while (!stop)
+		while (true)
 		{
 			ClockFace clockFace = getClockFace();
 			
@@ -62,21 +57,5 @@ public class ClockController {
 		}
 		
 	}
-	
-	public void acceptKey(String key, int repeatCount)
-	{
-		
-		boolean stop = currentStateAtomicRef.get().acceptKey(key, repeatCount);
-		//If stop is true, it means that the state has handled the keypress, no need to do anything else
-		if (!stop)
-		{
-			if (StringUtils.equals("KEY_POWER", key))
-			{
-				currentStateAtomicRef.set(new ShutdownClockState());
-			} else if (StringUtils.equals("KEY_0", key))
-			{
-				currentStateAtomicRef.set(new DemoClockState());
-			}
-		}
-	}
+
 }
