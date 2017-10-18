@@ -1,4 +1,4 @@
-package com.zwahlen.states;
+package com.zwahlen.ledclock.states;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -7,8 +7,8 @@ import java.util.TimeZone;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.zwahlen.clockface.ClockFace;
-import com.zwahlen.clockface.Digit;
+import com.zwahlen.ledclock.clockface.ClockFace;
+import com.zwahlen.ledclock.clockface.Digit;
 
 public class TimeClockState implements AbstractClockState {
 

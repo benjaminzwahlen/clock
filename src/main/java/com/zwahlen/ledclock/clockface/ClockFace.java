@@ -1,4 +1,4 @@
-package com.zwahlen.clockface;
+package com.zwahlen.ledclock.clockface;
 
 public class ClockFace {
 

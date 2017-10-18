@@ -1,11 +1,11 @@
-package com.zwahlen.controller;
+package com.zwahlen.ledclock.controller;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-import com.zwahlen.clockface.AbstractClockFaceRenderer;
-import com.zwahlen.clockface.ClockFace;
-import com.zwahlen.states.AbstractClockState;
-import com.zwahlen.states.TimeClockState;
+import com.zwahlen.ledclock.clockface.AbstractClockFaceRenderer;
+import com.zwahlen.ledclock.clockface.ClockFace;
+import com.zwahlen.ledclock.states.AbstractClockState;
+import com.zwahlen.ledclock.states.TimeClockState;
 
 public class ClockController {
 

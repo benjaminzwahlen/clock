@@ -1,7 +1,7 @@
-package com.zwahlen;
+package com.zwahlen.ledclock;
 
 import org.springframework.context.support.FileSystemXmlApplicationContext;
-import com.zwahlen.controller.ClockController;
+import com.zwahlen.ledclock.controller.ClockController;
 
 public class Clock {
 

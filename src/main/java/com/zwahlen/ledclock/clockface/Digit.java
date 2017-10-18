@@ -1,4 +1,4 @@
-package com.zwahlen.clockface;
+package com.zwahlen.ledclock.clockface;
 
 import java.util.HashMap;
 import java.util.Map;

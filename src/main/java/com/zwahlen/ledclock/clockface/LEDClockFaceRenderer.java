@@ -1,4 +1,4 @@
-package com.zwahlen.clockface;
+package com.zwahlen.ledclock.clockface;
 
 import org.apache.commons.lang3.Conversion;
 

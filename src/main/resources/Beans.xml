@@ -5,9 +5,9 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-   <bean id="clockController" class="com.clock.controller.ClockController">
+   <bean id="clockController" class="com.zwahlen.ledclock.controller.ClockController">
        <property name="renderer">
-       		<bean class="com.clock.clockface.LEDClockFaceRenderer">
+       		<bean class="com.zwahlen.ledclock.clockface.LEDClockFaceRenderer">
        		</bean>
        </property>
    </bean>

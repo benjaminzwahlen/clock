@@ -1,6 +1,6 @@
-package com.zwahlen.states;
+package com.zwahlen.ledclock.states;
 
-import com.zwahlen.clockface.ClockFace;
+import com.zwahlen.ledclock.clockface.ClockFace;
 
 public interface AbstractClockState {
 
